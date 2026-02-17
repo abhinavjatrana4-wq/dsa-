@@ -22,7 +22,7 @@ long long int minval ;
     
     void pop() {
         if(s.top() < minval ){
-            minval = (long long int )2*minval - s.top() ;
+            minval = 2*minval - s.top() ;
 
         }
         s.pop();

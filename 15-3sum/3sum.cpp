@@ -26,9 +26,7 @@ public:
                 j++;
 
              }
-             while(j < k && nums[k] == nums[k+1]){
-                k--;
-             }
+             
              }
             
 

@@ -3,10 +3,7 @@ public:
     bool isIsomorphic(string s, string t) {
         unordered_map<char , int > charIndexS;
         unordered_map<char , int > charIndexT;
-        if(s.length() != t.length()){
-            return false ;
-
-        }
+       
         for(int i = 0 ; i < s.size() ; i++){
             if(charIndexS.find(s[i]) == charIndexS.end()){
                 charIndexS[s[i]] = i ;

@@ -31,12 +31,8 @@ class Solution {
             }
 
         }
-        if(list1){
-            temp->next = list1;
+       temp->next = (list1) ? list1 : list2;
 
-        }
-        if(list2)
-        temp->next= list2 ;
 
       return dummy -> next ;
     }

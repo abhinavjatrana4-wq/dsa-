@@ -1,9 +1,7 @@
 class Solution {
     private:
     int f(int n ,  vector<int>&dp){
-        if(n <= 1 ){
-            return 1;
-        }
+        if(n==0||n==1) return 1 ;
         if(dp[n] != -1) return dp[n];
         else{
            return dp[n] = f(n-1 , dp ) + f(n-2 , dp );
